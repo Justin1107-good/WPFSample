@@ -50,7 +50,7 @@ namespace WPFSample.Helps
             fileAppender.ActivateOptions();
             // 将appender添加到root记录器
             hierarchy.Root.AddAppender(fileAppender);
-            hierarchy.Root.Level = log4net.Core.Level.Debug;
+            hierarchy.Root.Level = log4net.Core.Level.Error;
             hierarchy.Configured = true;
 
             return LogManager.GetLogger(type);
