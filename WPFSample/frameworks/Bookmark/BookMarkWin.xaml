@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFSample.frameworks.Bookmark.BookMarkWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSample.frameworks.Bookmark"
+        mc:Ignorable="d"
+        Title="BookMarkWin" Height="350" Width="500">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+        <ListBox Name="bookmarkListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="10">
+            <!-- DataTemplate to display bookmarks -->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Title}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding URL}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <Button Content="Add Bookmark" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="10" Click="AddBookmark_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
