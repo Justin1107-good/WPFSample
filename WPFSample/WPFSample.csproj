@@ -75,6 +75,7 @@
     <Compile Include="frameworks\WpfPrism\PrismWindow.xaml.cs">
       <DependentUpon>PrismWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helps\LevelToIndentConverter.cs" />
     <Compile Include="Helps\Log4NetObject.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -108,6 +109,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\lock.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
