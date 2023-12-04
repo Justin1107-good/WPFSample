@@ -64,6 +64,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frameworks\Bookmark\CreateBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\Bookmark\SaveBook.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frameworks\WpfPrism\PrismWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +86,13 @@
     </Compile>
     <Compile Include="frameworks\Bookmark\BookMarkWin.xaml.cs">
       <DependentUpon>BookMarkWin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Bookmark\CreateBook.xaml.cs">
+      <DependentUpon>CreateBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Bookmark\Models\BookInfo.cs" />
+    <Compile Include="frameworks\Bookmark\SaveBook.xaml.cs">
+      <DependentUpon>SaveBook.xaml</DependentUpon>
     </Compile>
     <Compile Include="frameworks\WpfPrism\PrismWindow.xaml.cs">
       <DependentUpon>PrismWindow.xaml</DependentUpon>
@@ -118,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Img.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\nullp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPFSample.frameworks.Bookmark.CreateBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSample.frameworks.Bookmark"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize" 
+        WindowStyle="ThreeDBorderWindow"
+        Title="CreateBook" Height="380" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Label Content="书签名：" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1">
+            <TextBox x:Name="TextBoxBookName" Width="200"/>
+            <Label Content="书签地址：" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            <TextBox x:Name="TextBoxBookUrl" Width="200"/>
+        </StackPanel>
+
+        <Label Content="书签内容：" Grid.Row="1"/>
+        <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Top">
+            <StackPanel Orientation="Horizontal">
+                <RichTextBox x:Name="RichTXBookContent" Width="auto" MinWidth="200" MinHeight="200"/>
+                <StackPanel Orientation="Horizontal" Margin="15 0 0 0">
+                    <Label Content="图标："/>
+                    <Image x:Name="ImageBook"  Source="/Images/nullp.png"  MinHeight="200" MinWidth="200"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="200" MouseDown="ImageBook_MouseDown">
+                        
+                    </Image>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <Label Content="标签：" Grid.Row="2" />
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top">
+            <Label Content="NET" x:Name="BookTag"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="3"  Grid.Column="1">
+            <Button x:Name="ButtonCancel" Width="75" Height="25" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 100 10" Content="取消" Click="ButtonCancel_Click"/>
+            <Button x:Name="ButtonSave" Content="保存" Width="75" Height="25" VerticalAlignment="Center" HorizontalAlignment="Right"  Margin="0 0 10 10" Click="ButtonSave_Click"/>
+        </StackPanel>
+
+
+    </Grid>
+
+</Window>

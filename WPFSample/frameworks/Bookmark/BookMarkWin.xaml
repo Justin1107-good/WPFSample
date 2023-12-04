@@ -6,21 +6,53 @@
         xmlns:local="clr-namespace:WPFSample.frameworks.Bookmark"
         mc:Ignorable="d"
         Title="BookMarkWin" Height="350" Width="500">
+    <Window.Resources>
+        <Style TargetType="RichTextBox">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="IsEnabled" Value="False"/>
+        </Style>  
+    </Window.Resources>
     <Grid>
         <StackPanel Orientation="Vertical">
-        <ListBox Name="bookmarkListBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" Height="200" Margin="10">
-            <!-- DataTemplate to display bookmarks -->
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel>
-                        <TextBlock Text="{Binding Title}" FontWeight="Bold" />
-                        <TextBlock Text="{Binding URL}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            <ListBox Name="bookmarkListBox"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" MinWidth="350" MinHeight="200" PreviewMouseRightButtonDown="bookmarkListBox_MouseRightButtonDown"> 
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                <Image Source="{Binding bookPictrue}" Width="50" Height="50"/>
+                                <TextBlock Text="{Binding bookName}" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                            </StackPanel>
+                            <TextBlock Grid.Row="1">
+                                <!--<Run Text="{Binding bookContemt}" />-->
+                                <InlineUIContainer> 
+                                    <RichTextBox Name="myRichTextBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Width="400">
+            <RichTextBox.Document>
+                <FlowDocument>
+                    <Paragraph>
+                        <Run Text="{Binding bookContemt}" />
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox.Document>
+        </RichTextBox>
+                                </InlineUIContainer>
+                            </TextBlock>
+                            <Grid.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Share" Click="ShareMenu_Click"/>
+                                </ContextMenu>
+                            </Grid.ContextMenu>
+                        </Grid>
 
-        <Button Content="Add Bookmark" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="10" Click="AddBookmark_Click"/>
+                    </DataTemplate>
+
+                </ListBox.ItemTemplate>  
+            </ListBox>
+
+            <Button Content="Add Bookmark" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="10" Click="AddBookmark_Click"/>
         </StackPanel>
     </Grid>
 </Window>
