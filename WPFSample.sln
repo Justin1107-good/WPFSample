@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSample", "WPFSample\WPFSample.csproj", "{6629AC1D-6E98-4AC0-B06F-1A3637EEB404}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MahApps_Metro", "MahApps_Metro", "{D7C36551-0CEF-4C85-BCC6-378036E90C03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahApps.MetroDemo", "MahApps.MetroDemo\MahApps.MetroDemo.csproj", "{80E21B5A-36CB-4350-9BDD-9ED41DF8C381}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{6629AC1D-6E98-4AC0-B06F-1A3637EEB404}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6629AC1D-6E98-4AC0-B06F-1A3637EEB404}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6629AC1D-6E98-4AC0-B06F-1A3637EEB404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E21B5A-36CB-4350-9BDD-9ED41DF8C381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E21B5A-36CB-4350-9BDD-9ED41DF8C381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E21B5A-36CB-4350-9BDD-9ED41DF8C381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E21B5A-36CB-4350-9BDD-9ED41DF8C381}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80E21B5A-36CB-4350-9BDD-9ED41DF8C381} = {D7C36551-0CEF-4C85-BCC6-378036E90C03}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7019C15-1B8B-4DD4-891E-8B3D15D72829}
