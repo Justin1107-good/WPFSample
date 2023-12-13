@@ -72,6 +72,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frameworks\Users\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\Users\UserControls\LoginStylePageOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\Users\UserControls\LoginStylePageTwo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frameworks\WpfPrism\PrismWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,6 +105,16 @@
     <Compile Include="frameworks\Bookmark\Models\BookInfo.cs" />
     <Compile Include="frameworks\Bookmark\SaveBook.xaml.cs">
       <DependentUpon>SaveBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Users\ControlEvents\LoginEvent.cs" />
+    <Compile Include="frameworks\Users\LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Users\UserControls\LoginStylePageOne.xaml.cs">
+      <DependentUpon>LoginStylePageOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Users\UserControls\LoginStylePageTwo.xaml.cs">
+      <DependentUpon>LoginStylePageTwo.xaml</DependentUpon>
     </Compile>
     <Compile Include="frameworks\WpfPrism\PrismWindow.xaml.cs">
       <DependentUpon>PrismWindow.xaml</DependentUpon>
