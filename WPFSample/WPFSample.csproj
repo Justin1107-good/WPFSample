@@ -72,6 +72,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frameworks\Expander\ExpanderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\TreeView\TreeViewStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frameworks\Users\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -105,6 +113,12 @@
     <Compile Include="frameworks\Bookmark\Models\BookInfo.cs" />
     <Compile Include="frameworks\Bookmark\SaveBook.xaml.cs">
       <DependentUpon>SaveBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Expander\ExpanderStyle.xaml.cs">
+      <DependentUpon>ExpanderStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\TreeView\TreeViewStyle.xaml.cs">
+      <DependentUpon>TreeViewStyle.xaml</DependentUpon>
     </Compile>
     <Compile Include="frameworks\Users\ControlEvents\LoginEvent.cs" />
     <Compile Include="frameworks\Users\LoginWindow.xaml.cs">
