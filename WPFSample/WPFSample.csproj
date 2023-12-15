@@ -72,6 +72,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frameworks\DrapDrop\DrapDropSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frameworks\Expander\ExpanderStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -113,6 +117,11 @@
     <Compile Include="frameworks\Bookmark\Models\BookInfo.cs" />
     <Compile Include="frameworks\Bookmark\SaveBook.xaml.cs">
       <DependentUpon>SaveBook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\DrapDrop\DFileInfo.cs" />
+    <Compile Include="frameworks\DrapDrop\DFileInfoViewModel.cs" />
+    <Compile Include="frameworks\DrapDrop\DrapDropSample.xaml.cs">
+      <DependentUpon>DrapDropSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="frameworks\Expander\ExpanderStyle.xaml.cs">
       <DependentUpon>ExpanderStyle.xaml</DependentUpon>
