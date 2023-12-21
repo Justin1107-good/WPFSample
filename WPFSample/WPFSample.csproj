@@ -72,11 +72,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="frameworks\ChristmasTree\ChristmaTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\CommonTemplates\CommonHome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="frameworks\DrapDrop\DrapDropSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="frameworks\Expander\ExpanderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frameworks\Fireworks\FireworkWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +130,12 @@
     <Compile Include="frameworks\Bookmark\SaveBook.xaml.cs">
       <DependentUpon>SaveBook.xaml</DependentUpon>
     </Compile>
+    <Compile Include="frameworks\ChristmasTree\ChristmaTree.xaml.cs">
+      <DependentUpon>ChristmaTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\CommonTemplates\CommonHome.xaml.cs">
+      <DependentUpon>CommonHome.xaml</DependentUpon>
+    </Compile>
     <Compile Include="frameworks\DrapDrop\DFileInfo.cs" />
     <Compile Include="frameworks\DrapDrop\DFileInfoViewModel.cs" />
     <Compile Include="frameworks\DrapDrop\DrapDropSample.xaml.cs">
@@ -125,6 +143,9 @@
     </Compile>
     <Compile Include="frameworks\Expander\ExpanderStyle.xaml.cs">
       <DependentUpon>ExpanderStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frameworks\Fireworks\FireworkWindow.xaml.cs">
+      <DependentUpon>FireworkWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="frameworks\TreeView\TreeViewStyle.xaml.cs">
       <DependentUpon>TreeViewStyle.xaml</DependentUpon>

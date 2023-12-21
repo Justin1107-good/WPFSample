@@ -1,0 +1,46 @@
+﻿<Window x:Class="WPFSample.frameworks.ChristmasTree.ChristmaTree"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSample.frameworks.ChristmasTree"
+        mc:Ignorable="d" 
+        Title="ChristmaTree" Height="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Name="christmasTreeCanvas">
+            <!-- 圣诞树的主干 -->
+            <Polygon Points="200,100 190,150 210,150" Fill="Brown" />
+
+            <!-- 圣诞树的三角形 -->
+            <Polygon Points="200,50 175,100 225,100" Fill="Green" />
+            <Polygon Points="200,0 160,50 240,50" Fill="Green" />
+            <Polygon Points="200,-50 145,0 255,0" Fill="Green" />
+
+            <!-- 圣诞树的装饰物（可以根据需要添加更多） -->
+            <Ellipse Canvas.Left="195" Canvas.Top="75" Width="10" Height="10" Fill="Red" />
+            <Ellipse Canvas.Left="185" Canvas.Top="120" Width="10" Height="10" Fill="Red" />
+            <Ellipse Canvas.Left="205" Canvas.Top="120" Width="10" Height="10" Fill="Red" />
+            <Ellipse Canvas.Left="175" Canvas.Top="170" Width="10" Height="10" Fill="Red" />
+            <Ellipse Canvas.Left="195" Canvas.Top="170" Width="10" Height="10" Fill="Red" />
+            <Ellipse Canvas.Left="215" Canvas.Top="170" Width="10" Height="10" Fill="Red" />
+        </Canvas>
+        <Canvas Name="birthdayCakeCanvas" Grid.Column="1">
+            <!-- 蛋糕部分 -->
+            <Polygon Points="100,300 300,300 200,150" Fill="Chocolate" />
+
+            <!-- 蜡烛 -->
+            <Line X1="200" Y1="150" X2="200" Y2="50" Stroke="Black" StrokeThickness="5" />
+            <Ellipse Canvas.Left="195" Canvas.Top="45" Width="10" Height="10" Fill="Yellow" />
+
+            <!-- 蛋糕上的装饰物（可以根据需要添加更多） -->
+            <Ellipse Canvas.Left="180" Canvas.Top="200" Width="40" Height="40" Fill="Red" />
+            <Ellipse Canvas.Left="200" Canvas.Top="180" Width="40" Height="40" Fill="Blue" />
+            <Ellipse Canvas.Left="220" Canvas.Top="200" Width="40" Height="40" Fill="Green" />
+        </Canvas>
+
+    </Grid>
+</Window>

@@ -27,7 +27,7 @@ namespace WPFSample.frameworks.DrapDrop
             _vm = new DFileInfoViewModel();
             _vm.Show();
             this.DataContext = _vm;
-        }
+        } 
 
         private void lv_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
